@@ -1,10 +1,10 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
-import numpy as np
+#import numpy as np
 import pandas as pd
 import tensorflow as tf
-import matplotlib.pyplot as plt
-from six.moves import urllib
-import tensorflow.compat.v2.feature_column as fc
+#import matplotlib.pyplot as plt
+#from six.moves import urllib
+#import tensorflow.compat.v2.feature_column as fc
 import os
 def clear(): return os.system('cls')
 
@@ -72,7 +72,7 @@ clear()
 # do perdict
 
 predict_result = list(linear_est.predict(eval_input_fn))
-position = 2
+position = 3
 print(dfeval.loc[position])
 print(y_eval.loc[position])
 print(predict_result[position]['probabilities'][1])
